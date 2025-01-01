@@ -1,0 +1,153 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.login-content {
+  text-align: center;
+  color: #333;
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+.login-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.login-content p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInText 1.5s ease-out forwards 0.5s;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp 1s ease-out forwards 1s;
+  opacity: 0;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 2.2em;
+  color: #333;
+}
+
+.textbox {
+  margin: 20px 0;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1.1em;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.textbox input:focus {
+  border-color: #007bff;
+  background-color: #f0faff;
+}
+
+.submit-btn button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animasi untuk form login */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+  .login-box {
+    width: 300px;
+  }
+
+  .login-content h1 {
+    font-size: 2em;
+  }
+
+  .login-content p {
+    font-size: 1em;
+  }
+
+  .login-box h2 {
+    font-size: 1.8em;
+  }
+
+  .textbox input {
+    font-size: 0.9em;
+  }
+
+  .submit-btn button {
+    font-size: 1em;
+  }
+}

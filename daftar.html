@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" href="ASET/LOGO/LOGO 2 (1).png" type="image/x-icon" />
+    <title>e-pocket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="CSS/daftar.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="ASET/LOGO/LOGO.png" alt="Logo" height="30" class="d-inline-block align-text-top rounded" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="profil.html">Profil</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Transaksi </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="simpan-pinjam.html">Pengajuan Transaksi</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="riwayat.html">Riwayat Transaksi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="login.html">Masuk</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar end -->
+    </header>
+    <!-- header end -->
+    <section class="transaction-list">
+      <div class="container">
+        <h1 class="section-title">Transaksi Mudah, Cepat, dan Aman</h1>
+
+        <div class="transaction-cards">
+          <!-- Transfer dan Tarik Tunai -->
+          <div class="transaction-card transfer">
+            <div class="transaction-img" style="background-image: url(ASET/GAMBAR/transaksi.jpg)"></div>
+            <div class="transaction-details">
+              <h3>Transfer dan Tarik Tunai</h3>
+              <p class="category">Keuangan Pribadi</p>
+              <div class="qr-code" id="qr-code-1"></div>
+            </div>
+          </div>
+
+          <!-- Pembayaran Tagihan -->
+          <div class="transaction-card bills">
+            <div class="transaction-img" style="background-image: url(ASET/GAMBAR/pay.png)"></div>
+            <div class="transaction-details">
+              <h3>Pembayaran Tagihan</h3>
+              <p class="category">Kebutuhan Rumah Tangga</p>
+              <div class="qr-code" id="qr-code-2"></div>
+            </div>
+          </div>
+
+          <!-- Pembelian Pulsa dan Paket Data -->
+          <div class="transaction-card pulsa">
+            <div class="transaction-img" style="background-image: url(ASET/GAMBAR/data.jpg)"></div>
+            <div class="transaction-details">
+              <h3>Pembelian Pulsa & Paket Data</h3>
+              <p class="category">Telekomunikasi</p>
+              <div class="qr-code" id="qr-code-3"></div>
+            </div>
+          </div>
+
+          <!-- Belanja Online -->
+          <div class="transaction-card shopping">
+            <div class="transaction-img" style="background-image: url(ASET/GAMBAR/belanja.png)"></div>
+            <div class="transaction-details">
+              <h3>Belanja Online</h3>
+              <p class="category">E-commerce</p>
+              <div class="qr-code" id="qr-code-4"></div>
+            </div>
+          </div>
+
+          <!-- Pembayaran QRIS -->
+          <div class="transaction-card qris">
+            <div class="transaction-img" style="background-image: url(ASET/GAMBAR/qr.png)"></div>
+            <div class="transaction-details">
+              <h3>Pembayaran QRIS</h3>
+              <p class="category">Pembayaran Digital</p>
+              <div class="qr-code" id="qr-code-5"></div>
+            </div>
+          </div>
+
+          <!-- Simpan Pinjam -->
+          <div class="transaction-card loan">
+            <div class="transaction-img" style="background-image: url(ASET/GAMBAR/simpan.png)"></div>
+            <div class="transaction-details">
+              <h3>Simpan Pinjam</h3>
+              <p class="category">Keuangan</p>
+              <div class="qr-code" id="qr-code-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="javascript/daftar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

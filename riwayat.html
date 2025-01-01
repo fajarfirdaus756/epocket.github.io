@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" href="ASET/LOGO/LOGO 2 (1).png" type="image/x-icon" />
+    <title>e-pocket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="CSS/riwayat.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="ASET/LOGO/LOGO.png" alt="Logo" height="30" class="d-inline-block align-text-top rounded" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="profil.html">Profil</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Transaksi </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="simpan-pinjam.html">Pengajuan Transaksi</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="daftar.html">Daftar Transaksi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="login.html">Masuk</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar end -->
+      <section class="transaction-history">
+        <div class="container">
+            <h1 class="section-title">Riwayat Transaksi</h1>
+
+            <!-- Filter Transaksi -->
+            <div class="filter-container">
+                <select id="statusFilter" class="filter-dropdown">
+                    <option value="">Semua Status</option>
+                    <option value="success">Sukses</option>
+                    <option value="failed">Gagal</option>
+                    <option value="pending">Menunggu</option>
+                </select>
+            </div>
+
+            <!-- Card Transaksi -->
+            <div class="card-container">
+                <!-- Data Transaksi 1 -->
+                <div class="card success">
+                    <h3>Transfer Bank</h3>
+                    <p><strong>Nominal:</strong> Rp 1.500.000</p>
+                    <p><strong>Status:</strong> <span class="status success">Sukses</span></p>
+                    <p><strong>Tanggal:</strong> 2025-01-01</p>
+                </div>
+                <!-- Data Transaksi 2 -->
+                <div class="card failed">
+                    <h3>Tarik Tunai</h3>
+                    <p><strong>Nominal:</strong> Rp 500.000</p>
+                    <p><strong>Status:</strong> <span class="status failed">Gagal</span></p>
+                    <p><strong>Tanggal:</strong> 2025-01-02</p>
+                </div>
+                <!-- Data Transaksi 3 -->
+                <div class="card pending">
+                    <h3>Pembayaran Tagihan</h3>
+                    <p><strong>Nominal:</strong> Rp 250.000</p>
+                    <p><strong>Status:</strong> <span class="status pending">Menunggu</span></p>
+                    <p><strong>Tanggal:</strong> 2025-01-03</p>
+                </div>
+                <!-- Data Transaksi 4 -->
+                <div class="card success">
+                    <h3>Pembelian Pulsa</h3>
+                    <p><strong>Nominal:</strong> Rp 100.000</p>
+                    <p><strong>Status:</strong> <span class="status success">Sukses</span></p>
+                    <p><strong>Tanggal:</strong> 2025-01-04</p>
+                </div>
+                <!-- Data Transaksi 5 -->
+                <div class="card failed">
+                    <h3>Belanja Online</h3>
+                    <p><strong>Nominal:</strong> Rp 2.000.000</p>
+                    <p><strong>Status:</strong> <span class="status failed">Gagal</span></p>
+                    <p><strong>Tanggal:</strong> 2025-01-05</p>
+                </div>
+                <!-- Data Transaksi 6 -->
+                <div class="card success">
+                    <h3>Pembayaran QRIS</h3>
+                    <p><strong>Nominal:</strong> Rp 300.000</p>
+                    <p><strong>Status:</strong> <span class="status success">Sukses</span></p>
+                    <p><strong>Tanggal:</strong> 2025-01-06</p>
+                </div>
+                <!-- Data Transaksi 7 -->
+                <div class="card pending">
+                    <h3>Tarik Tunai</h3>
+                    <p><strong>Nominal:</strong> Rp 1.000.000</p>
+                    <p><strong>Status:</strong> <span class="status pending">Menunggu</span></p>
+                    <p><strong>Tanggal:</strong> 2025-01-07</p>
+                </div>
+                <!-- Data Transaksi 8 -->
+                <div class="card success">
+                    <h3>Transfer Bank</h3>
+                    <p><strong>Nominal:</strong> Rp 3.000.000</p>
+                    <p><strong>Status:</strong> <span class="status success">Sukses</span></p>
+                    <p><strong>Tanggal:</strong> 2025-01-08</p>
+                </div>
+                <!-- Data Transaksi 9 -->
+                <div class="card failed">
+                    <h3>Pembayaran Tagihan</h3>
+                    <p><strong>Nominal:</strong> Rp 150.000</p>
+                    <p><strong>Status:</strong> <span class="status failed">Gagal</span></p>
+                    <p><strong>Tanggal:</strong> 2025-01-09</p>
+                </div>
+                <!-- Data Transaksi 10 -->
+                <div class="card success">
+                    <h3>Pembelian Pulsa</h3>
+                    <p><strong>Nominal:</strong> Rp 50.000</p>
+                    <p><strong>Status:</strong> <span class="status success">Sukses</span></p>
+                    <p><strong>Tanggal:</strong> 2025-01-10</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="javascript/riwayat.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+  </html>

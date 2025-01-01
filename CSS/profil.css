@@ -1,0 +1,155 @@
+section {
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+.hero-box .box p {
+  width: 500px;
+}
+.hero-box .box img {
+  width: 400px;
+}
+@media (max-width: 992px) {
+  .hero-box .box p {
+    font-size: 14px;
+    width: 300px;
+  }
+  .hero-box .box img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-box {
+    text-align: center;
+  }
+  .hero-box .box p {
+    width: 100%;
+  }
+}
+/* Animasi untuk header dan gambar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.hero {
+  padding: 60px 0;
+}
+
+.hero .hero-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.hero .box {
+  width: 100%;
+  max-width: 550px;
+}
+
+.hero .box h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: slideInLeft 1.5s ease-out;
+}
+
+.hero .box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease-out 0.5s;
+}
+
+.hero .btn {
+  font-size: 1rem;
+  padding: 12px 25px;
+  margin-right: 10px;
+  margin-top: 20px;
+  animation: bounceIn 1.5s ease-out 1s;
+}
+
+.hero .btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.hero .btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.hero .btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 500px;
+  animation: slideInRight 1.5s ease-out 0.5s;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero .hero-box {
+    flex-direction: column;
+  }
+
+  .hero .box h1 {
+    font-size: 2rem;
+  }
+
+  .hero .box p {
+    font-size: 1rem;
+  }
+}
